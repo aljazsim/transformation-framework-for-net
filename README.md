@@ -277,7 +277,7 @@ Run the following command in your Package Manager Console in Visual Studio:
 Install-Package TransformationFramework 
 ```
 
-Or just simply search for TransformationFramework in NuGet package manager in Visual Studio.
+Or just simply search for TransformationFramework in NuGet package manager in Visual Studio. The NuGet package is avaliable for **.NET Standard 2.0**.
 
 ## Guidelines
 
