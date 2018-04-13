@@ -23,6 +23,9 @@ namespace TransformationFramework
             this.TrimCharacters = trimCharacters;
         }
 
+        /// <summary>
+        /// Initializes a new instance of the <see cref="ToTrimmedStringAttribute"/> class.
+        /// </summary>
         public ToTrimmedStringAttribute()
         {
         }
