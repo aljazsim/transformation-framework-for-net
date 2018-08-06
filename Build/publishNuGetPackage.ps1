@@ -6,7 +6,7 @@ $msbuild = "C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\MSBuil
 $nuget = "C:\Program Files (x86)\NuGet\nuget.exe"
 
 $projectFilePath = "..\Source\TransformationFramework\TransformationFramework.csproj";
-$nugetPackageFilePath = "..\Source\TransformationFramework\bin\Release\TransformationFramework.1.0.3.nupkg"
+$nugetPackageFilePath = "..\Source\TransformationFramework\bin\Release\TransformationFramework.1.0.4.nupkg"
 
 # remove references to stylecop and fxcop
 (Get-Content $projectFilePath) -replace ".*StyleCop.*", "" | Out-File $projectFilePath
