@@ -1,3 +1,5 @@
+param($nugetKey="")
+
 $ErrorPreference = "Stop"
 
 $msbuild = "C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\MSBuild\15.0\Bin\msbuild.exe"
@@ -14,4 +16,4 @@ $nugetPackageFilePath = "..\Source\TransformationFramework\bin\Release\Transform
 & "$msbuild" "$projectFilePath" /t:pack /p:Configuration=Release
 
 # publish package
-& "$nuget" push "$nugetPackageFilePath" xxx -Source https://api.nuget.org/v3/index.json
+& "$nuget" push "$nugetPackageFilePath" $nugetKey -Source https://api.nuget.org/v3/index.json
