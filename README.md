@@ -57,7 +57,7 @@ The easiest way of transforming property values is by using transformation attri
  ```csharp
 public class Example : Transformable
 {
-  [ToUpperCaseString()]
+    [ToUpperCaseString()]
   public string Name
   {
     get;
@@ -82,7 +82,7 @@ Not all transformation attributes can be used with all property types. For examp
  ```csharp
 public class Example : Transformable
 {
-  [ToUpperCaseString()]
+    [ToUpperCaseString()]
   public int Length
   {
     get;
@@ -138,6 +138,8 @@ Example:
  ```csharp
 public sealed class Example : Transformable
 {
+    #region Public Properties
+
     [ToUpperCaseString(TransformationContext = "long")]
     [ToLowerCaseString(TransformationContext = "short")]
     public string Property1
